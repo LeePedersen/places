@@ -29,9 +29,6 @@ Place.prototype.about = function() {
   return this.landmark + ", " + this.food + ", " + this.cat;
 }
 
-//prototype function that does UI appending
-// <li id=this.id
-
 //User Interface Logic --
 
 $(document).ready(function(){
@@ -42,22 +39,6 @@ $(document).ready(function(){
   ourPlaces.addPlace(dia);
   ourPlaces.addPlace(ny);
   ourPlaces.addPlace(puertoRico);
-
-  console.log(ourPlaces.places.length);
-
-  // ourPlaces.forEach(function(place) {
-  //   $(place.id).click(
-  //
-  // })
-  //
-  //
-  // for (i = 0; i < ourPlaces.places.length; i++) {
-  //   $("#places" + i).append(ourPlaces.places[i].location + "<br>");
-  //
-  //   var output = ourPlaces.places[i].about();
-  //   console.log(output);
-  //   $("#places" + i).click(event, index);
-  // }
 
   $("#places0").append(ourPlaces.places[0].location);
 
@@ -85,15 +66,4 @@ $(document).ready(function(){
     console.log(output);
     $("#places2output").text(output);
   });
-
 });
-
-
-
-//
-// function ourFunction(event, i) {
-//   event.preventDefault();
-//   console.log(output);
-//   console.log(i);
-//   $("#places" + i).append(output);
-// }
